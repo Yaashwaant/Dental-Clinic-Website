@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Republic - Your Smile, Our Priority</title>
+  <meta name="description" content="Expert dental care with advanced technology for a healthier, brighter, and confident you. Book an appointment today.">
+  <!-- Google Fonts: Inter and Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Wrapper to center the design on larger screens and restrict max width to Figma's 1440px -->
+  <div class="app-container">
+    
+    <!-- Top Navigation Header -->
+    <header class="header" id="main-header">
+      <div class="header-content">
+        <a href="#" class="logo-container" id="logo-link">
+          <img src="assets/logo.png" alt="Dental Republic Logo" class="logo-img">
+          <span class="logo-text">Dental Republic</span>
+        </a>
+        
+        <nav class="nav-menu">
+          <div class="nav-item-container">
+            <a href="#" class="nav-item active" id="nav-home">Home</a>
+          </div>
+          <div class="nav-item-container has-dropdown" id="nav-services-container">
+            <a href="#" class="nav-item" id="nav-services">Services</a>
+            <div class="dropdown-menu">
+              <a href="#service-general" class="dropdown-item">General Dentistry</a>
+              <a href="#service-cosmetic" class="dropdown-item">Cosmetic Dentistry</a>
+              <a href="#service-orthodontics" class="dropdown-item">Orthodontics</a>
+              <a href="#service-implant" class="dropdown-item">Dental Implant</a>
+            </div>
+          </div>
+          <div class="nav-item-container">
+            <a href="#" class="nav-item" id="nav-doctors">Doctors</a>
+          </div>
+          <div class="nav-item-container">
+            <a href="#" class="nav-item" id="nav-about">About Us</a>
+          </div>
+          <div class="nav-item-container">
+            <a href="#" class="nav-item" id="nav-testimonials">Testimonials</a>
+          </div>
+          <div class="nav-item-container">
+            <a href="#" class="nav-item" id="nav-blog">Blog</a>
+          </div>
+          <div class="nav-item-container">
+            <a href="#" class="nav-item" id="nav-contact">Contact</a>
+          </div>
+        </nav>
+        
+        <button class="btn btn-primary header-cta" id="header-book-btn">Book Appointment</button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Hero Section -->
+      <section class="hero-section">
+        
+        <!-- Left Image Column -->
+        <div class="hero-image-column">
+          <!-- Background Ellipses/Circles -->
+          <div class="circle-bg circle-outer">
+            <img src="assets/ellipse_3.svg" alt="" class="bg-shape">
+          </div>
+          <div class="circle-bg circle-middle">
+            <img src="assets/ellipse_1.svg" alt="" class="bg-shape">
+          </div>
+          <div class="circle-bg circle-inner">
+            <img src="assets/ellipse_2.svg" alt="" class="bg-shape">
+          </div>
+          
+          <!-- Central 3D Tooth Image -->
+          <div class="hero-tooth-container">
+            <img src="assets/hero_tooth.png" alt="Dental Republic Tooth Mascot" class="hero-tooth">
+            
+            <!-- Overlapping Card: Advanced Care -->
+            <div class="info-card card-advanced-care" id="card-advanced">
+              <div class="card-icon-container">
+                <img src="assets/ellipse_7.svg" alt="" class="icon-bg">
+                <img src="assets/advanced_care_icon.png" alt="" class="card-icon">
+              </div>
+              <div class="card-text">
+                <h3 class="card-title">Advanced Care</h3>
+                <p class="card-desc">Modern Technology<br>for painless treatment</p>
+              </div>
+            </div>
+
+            <!-- Overlapping Card: Expert Doctors -->
+            <div class="info-card card-expert-doctors" id="card-doctors">
+              <div class="card-icon-container">
+                <img src="assets/ellipse_7.svg" alt="" class="icon-bg">
+                <img src="assets/expert_doctors_icon.png" alt="" class="card-icon">
+              </div>
+              <div class="card-text">
+                <h3 class="card-title">Expert Doctors</h3>
+                <p class="card-desc">Highly qualified &<br>experienced team</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Sparkles and Orbs -->
+          <svg class="floating-sparkle sparkle-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/></svg>
+          <svg class="floating-sparkle sparkle-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/></svg>
+          <svg class="floating-sparkle sparkle-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/></svg>
+        </div>
+
+        <!-- Right Content Column -->
+        <div class="hero-content-column">
+          <!-- Priority Pill Badge -->
+          <div class="priority-badge">
+            <div class="badge-icon-wrapper">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/></svg>
+            </div>
+            <span class="badge-text">YOUR SMILE, OUR PRIORITY</span>
+          </div>
+
+          <!-- Main Typography Heading -->
+          <h1 class="hero-heading">
+            Let Us Brighten<br>
+            Your <span class="highlight-text">Smile</span>
+          </h1>
+
+          <!-- Body Copy -->
+          <p class="hero-subtext">
+            Expert dental care with advanced technology for a healthier, brighter and confident you.
+          </p>
+
+          <!-- Interactive Actions -->
+          <div class="hero-actions">
+            <button class="btn btn-primary cta-book" id="hero-book-btn">
+              Book Appointment
+            </button>
+            <button class="btn btn-secondary cta-explore" id="hero-explore-btn">
+              Explore Services
+            </button>
+          </div>
+
+          <!-- Happy Patients Collage / Stats -->
+          <div class="hero-stats">
+            <img src="assets/patients_avatars.png" alt="Happy patient profiles" class="patients-collage" height="45">
+            <div class="patients-info">
+              <div class="patients-count">10K+</div>
+              <div class="patients-label">Happy Patients</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Services Ribbon Section -->
+      <section class="services-ribbon">
+        <!-- Column 1: General Dentistry -->
+        <div class="service-col" id="service-general">
+          <div class="service-icon-wrapper">
+            <img src="assets/ellipse_8.svg" alt="" class="service-icon-bg">
+            <img src="assets/general_dentistry_icon.png" alt="General Dentistry Icon" class="service-icon">
+          </div>
+          <div class="service-info">
+            <h4 class="service-name">General Dentistry</h4>
+            <p class="service-desc">Regular Check-ups, cleaning, and preventive care.</p>
+          </div>
+        </div>
+
+        <div class="service-divider divider-1"></div>
+
+        <!-- Column 2: Cosmetic Dentistry -->
+        <div class="service-col" id="service-cosmetic">
+          <div class="service-icon-wrapper">
+            <img src="assets/ellipse_8.svg" alt="" class="service-icon-bg">
+            <img src="assets/cosmetic_dentistry_icon.png" alt="Cosmetic Dentistry Icon" class="service-icon">
+          </div>
+          <div class="service-info">
+            <h4 class="service-name">Cosmetic Dentistry</h4>
+            <p class="service-desc">Enhance your smile with whitening, veneers & more.</p>
+          </div>
+        </div>
+
+        <div class="service-divider divider-2"></div>
+
+        <!-- Column 3: Orthodontics -->
+        <div class="service-col" id="service-orthodontics">
+          <div class="service-icon-wrapper">
+            <img src="assets/ellipse_8.svg" alt="" class="service-icon-bg">
+            <img src="assets/orthodontics_icon.png" alt="Orthodontics Icon" class="service-icon">
+          </div>
+          <div class="service-info">
+            <h4 class="service-name">Orthodontics</h4>
+            <p class="service-desc">Braces and aligners for a perfect smile.</p>
+          </div>
+        </div>
+
+        <div class="service-divider divider-3"></div>
+
+        <!-- Column 4: Dental Implant -->
+        <div class="service-col" id="service-implant">
+          <div class="service-icon-wrapper">
+            <img src="assets/ellipse_8.svg" alt="" class="service-icon-bg">
+            <img src="assets/implant_icon.png" alt="Dental Implant Icon" class="service-icon">
+          </div>
+          <div class="service-info">
+            <h4 class="service-name">Dental Implant</h4>
+            <p class="service-desc">Permanent solutions for missing teeth.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Interactive Booking Modal -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2 class="modal-title">Book an Appointment</h2>
+        <p class="modal-subtitle">Fill out the details below to schedule your dental visit.</p>
+      </div>
+      
+      <!-- Booking Form -->
+      <form id="appointment-form" class="appointment-form">
+        <div class="form-group">
+          <label for="patient-name" class="form-label">Full Name</label>
+          <input type="text" id="patient-name" name="name" class="form-input" placeholder="John Doe" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="patient-email" class="form-label">Email Address</label>
+          <input type="email" id="patient-email" name="email" class="form-input" placeholder="john@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="appointment-date" class="form-label">Preferred Date</label>
+            <input type="date" id="appointment-date" name="date" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="appointment-time" class="form-label">Preferred Time</label>
+            <input type="time" id="appointment-time" name="time" class="form-input" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service-type" class="form-label">Select Service</label>
+          <select id="service-type" name="service" class="form-input select-input" required>
+            <option value="" disabled selected>Choose a dental treatment...</option>
+            <option value="general">General Dentistry</option>
+            <option value="cosmetic">Cosmetic Dentistry</option>
+            <option value="orthodontics">Orthodontics</option>
+            <option value="implant">Dental Implant</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit-btn">Confirm Appointment</button>
+      </form>
+
+      <!-- Success Screen (Hidden initially) -->
+      <div class="modal-success-screen" id="modal-success">
+        <div class="success-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" class="success-svg" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="success-title">Appointment Requested!</h3>
+        <p class="success-message">Thank you, <strong id="summary-name"></strong>. We have received your request for <span id="summary-service"></span> on <span id="summary-date"></span> at <span id="summary-time"></span>. A confirmation email has been sent to <span id="summary-email"></span>.</p>
+        <button class="btn btn-primary success-close-btn" id="success-done-btn">Back to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
