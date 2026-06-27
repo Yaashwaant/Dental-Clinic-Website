@@ -15,11 +15,11 @@ export default function Hero({ onBookClick }: { onBookClick: () => void }) {
         <div className="circle-bg circle-inner">
           <img src="/assets/ellipse_2.svg" alt="" className="bg-shape" />
         </div>
-        
+
         {/* Central 3D Tooth Image */}
         <div className="hero-tooth-container">
           <img src="/assets/hero_tooth.png" alt="Dental Republic Tooth Mascot" className="hero-tooth" />
-          
+
           {/* Overlapping Card: Advanced Care */}
           <div className="info-card card-advanced-care" id="card-advanced">
             <div className="card-icon-container">
@@ -28,7 +28,7 @@ export default function Hero({ onBookClick }: { onBookClick: () => void }) {
             </div>
             <div className="card-text">
               <h3 className="card-title">4.9★ Rated</h3>
-              <p className="card-desc">90+ happy patients<br/>on Google</p>
+              <p className="card-desc">90+ happy patients<br />on Google</p>
             </div>
           </div>
 
@@ -40,15 +40,15 @@ export default function Hero({ onBookClick }: { onBookClick: () => void }) {
             </div>
             <div className="card-text">
               <h3 className="card-title">Expert Doctors</h3>
-              <p className="card-desc">Led by Dr. Sheetal<br/>Jagtap Bhise</p>
+              <p className="card-desc">Led by Dr. Sheetal<br />Jagtap Bhise</p>
             </div>
           </div>
         </div>
 
         {/* Floating Sparkles and Orbs */}
-        <svg className="floating-sparkle sparkle-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/></svg>
-        <svg className="floating-sparkle sparkle-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/></svg>
-        <svg className="floating-sparkle sparkle-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/></svg>
+        <svg className="floating-sparkle sparkle-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor" /></svg>
+        <svg className="floating-sparkle sparkle-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor" /></svg>
+        <svg className="floating-sparkle sparkle-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor" /></svg>
       </div>
 
       {/* Right Content Column */}
@@ -56,14 +56,14 @@ export default function Hero({ onBookClick }: { onBookClick: () => void }) {
         {/* Priority Pill Badge */}
         <div className="priority-badge">
           <div className="badge-icon-wrapper">
-            <svg className="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/></svg>
+            <svg className="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor" /></svg>
           </div>
           <span className="badge-text">GENTLE, PAINLESS DENTAL CARE</span>
         </div>
 
         {/* Main Typography Heading */}
         <h1 className="hero-heading" style={{ fontSize: "3.5rem", lineHeight: "1.1" }}>
-          Caring, Painless<br/>
+          Caring, Painless<br />
           Dental Care for Your <span className="highlight-text" style={{ display: "inline-block", marginTop: "10px" }}>Whole Family</span>
         </h1>
 
