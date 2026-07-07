@@ -9,7 +9,7 @@ export default function Header({ onBookClick }: { onBookClick: () => void }) {
     <header className="header" id="main-header">
       <div className="header-content">
         <Link href="/" className="logo-container" style={{ display: "flex", alignItems: "center", textDecoration: "none" }} id="logo-link">
-          <img src="/assets/logo.png" alt="Shree Dental Care Logo" className="logo-img" />
+          <img src="/logo.png" alt="Shree Dental Care Logo" className="logo-img" />
           <div style={{ display: "flex", flexDirection: "column", marginLeft: "10px" }}>
             <span className="logo-text" style={{ lineHeight: "1.2" }}>Shree Dental Care</span>
             <span style={{ fontSize: "0.7em", color: "var(--color-primary, #0f766e)", fontWeight: "600", marginTop: "2px" }}>& Multispeciality Clinic</span>
@@ -59,7 +59,7 @@ export default function Header({ onBookClick }: { onBookClick: () => void }) {
           </div>
         </nav>
         
-        <a href="tel:+910000000000" className="btn btn-primary header-cta" id="header-book-btn" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Book Appointment</a>
+        <button onClick={onBookClick} className="btn btn-primary header-cta" id="header-book-btn" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', border: 'none', fontFamily: 'inherit' }}>Book Appointment</button>
       </div>
     </header>
   );

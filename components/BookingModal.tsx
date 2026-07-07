@@ -11,7 +11,9 @@ export default function BookingModal({ isOpen, onClose, defaultService = "" }: B
   const [isSuccess, setIsSuccess] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    age: "",
+    gender: "",
+    phone: "",
     date: "",
     time: "",
     service: defaultService
@@ -84,9 +86,26 @@ export default function BookingModal({ isOpen, onClose, defaultService = "" }: B
               <input type="text" id="patient-name" name="name" className="form-input" placeholder="John Doe" value={formData.name} onChange={handleChange} required />
             </div>
             
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="patient-age" className="form-label">Age</label>
+                <input type="number" id="patient-age" name="age" className="form-input" placeholder="e.g. 35" value={formData.age} onChange={handleChange} required min="1" max="120" />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="patient-gender" className="form-label">Gender</label>
+                <select id="patient-gender" name="gender" className="form-input select-input" value={formData.gender} onChange={handleChange} required>
+                  <option value="" disabled>Select gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            
             <div className="form-group">
-              <label htmlFor="patient-email" className="form-label">Email Address</label>
-              <input type="email" id="patient-email" name="email" className="form-input" placeholder="john@example.com" value={formData.email} onChange={handleChange} required />
+              <label htmlFor="patient-phone" className="form-label">Phone Number</label>
+              <input type="tel" id="patient-phone" name="phone" className="form-input" placeholder="+91" value={formData.phone} onChange={handleChange} required />
             </div>
 
             <div className="form-row">
@@ -124,7 +143,7 @@ export default function BookingModal({ isOpen, onClose, defaultService = "" }: B
             </div>
             <h3 className="success-title">Appointment Requested!</h3>
             <p className="success-message">
-              Thank you, <strong>{formData.name}</strong>. We have received your request for <span>{serviceLabels[formData.service]}</span> on <span>{formattedDate}</span> at <span>{formattedTime}</span>. A confirmation email has been sent to <span>{formData.email}</span>.
+              Thank you, <strong>{formData.name}</strong>. We have received your request for <span>{serviceLabels[formData.service]}</span> on <span>{formattedDate}</span> at <span>{formattedTime}</span>. Our team will contact you shortly at <span>{formData.phone}</span> to confirm your appointment.
             </p>
             <button type="button" className="btn btn-primary success-close-btn" onClick={onClose}>Back to Home</button>
           </div>

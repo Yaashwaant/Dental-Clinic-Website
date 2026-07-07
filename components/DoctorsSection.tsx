@@ -12,15 +12,18 @@ export default function DoctorsSection() {
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
-          {/* Dr. Sheetal Jagtap Bhise */}
+          {/* Dr. Sheetal Jagtap-Bhise */}
           <div className="doctor-card" style={{ background: "var(--color-white)", borderRadius: "16px", padding: "30px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", textAlign: "center", transition: "transform 0.3s ease" }}>
             <div style={{ width: "120px", height: "120px", borderRadius: "50%", background: "var(--color-light-bg)", margin: "0 auto 20px", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
               {/* Placeholder image */}
-              <img src="/assets/doctor_placeholder.jpg" alt="Dr. Sheetal Jagtap Bhise" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img src="/assets/doctor_placeholder.jpg" alt="Dr. Sheetal Jagtap-Bhise" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               <span style={{ fontSize: "40px", color: "var(--color-primary)" }}>👩‍⚕️</span>
             </div>
-            <h3 style={{ fontSize: "1.25rem", color: "var(--color-black)", marginBottom: "8px" }}>Dr. Sheetal Jagtap Bhise</h3>
-            <h4 style={{ fontSize: "0.95rem", color: "var(--color-primary)", marginBottom: "15px", fontWeight: "600" }}>Lead Dentist</h4>
+            <h3 style={{ fontSize: "1.25rem", color: "var(--color-black)", marginBottom: "8px" }}>Dr. Sheetal Jagtap-Bhise</h3>
+            <h4 style={{ fontSize: "0.95rem", color: "var(--color-primary)", marginBottom: "8px", fontWeight: "600" }}>BDS, Govt. Dental College, Sambhajinagar</h4>
+            <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", lineHeight: "1.6", marginBottom: "8px" }}>
+              Reg. No. A-30142
+            </p>
             <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", lineHeight: "1.6" }}>
               Highly recommended for root canals, extractions, and being especially reassuring with anxious or first-time patients.
             </p>

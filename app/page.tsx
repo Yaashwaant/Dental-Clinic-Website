@@ -3,10 +3,14 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import ServicesRibbon from "@/components/ServicesRibbon";
-import DoctorsSection from "@/components/DoctorsSection";
+import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import VideoSection from "@/components/VideoSection";
+import PatientEducationSection from "@/components/PatientEducationSection";
+import DoctorsSection from "@/components/DoctorsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import AftercareSection from "@/components/AftercareSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -29,10 +33,14 @@ export default function Home() {
       <Header onBookClick={() => openModal()} />
       <main className="main-content">
         <Hero onBookClick={() => openModal()} />
-        <ServicesRibbon onServiceClick={(service) => openModal(service)} />
+        <AboutSection />
         <ServicesSection />
+        <WhyChooseUsSection />
+        <VideoSection />
+        <PatientEducationSection />
         <DoctorsSection />
         <TestimonialsSection />
+        <AftercareSection />
         <ContactSection />
       </main>
       <Footer />

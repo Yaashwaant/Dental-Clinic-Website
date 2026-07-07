@@ -10,20 +10,18 @@ export default function Footer() {
           {/* Brand Col */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "20px" }}>
-              <img src="/assets/logo.png" alt="Shree Dental Care Logo" style={{ width: "40px", height: "40px", background: "white", borderRadius: "50%", padding: "2px" }} />
+              <img src="/logo.png" alt="Shree Dental Care Logo" style={{ width: "40px", height: "40px", background: "white", borderRadius: "50%", padding: "2px" }} />
               <div>
                 <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--color-primary)", lineHeight: "1.1" }}>Shree Dental Care</h3>
                 <span style={{ fontSize: "0.7rem", color: "#ccc" }}>& Multispeciality Clinic</span>
               </div>
             </div>
             <p style={{ color: "#aaa", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "20px" }}>
-              Trusted multispeciality dental care in Kamothe, Navi Mumbai. We provide gentle, painless treatments for your whole family.
+              Trusted multispeciality dental care in Kamothe, Navi Mumbai. Let us keep you smiling!
             </p>
             <div style={{ display: "flex", gap: "15px" }}>
-              {/* Social placeholders */}
-              <a href="#" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", textDecoration: "none" }}>f</a>
-              <a href="#" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", textDecoration: "none" }}>in</a>
-              <a href="#" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", textDecoration: "none" }}>ig</a>
+              <a href="https://instagram.com/shree.dental_clinic.kamothe" target="_blank" rel="noopener noreferrer" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", textDecoration: "none" }}>ig</a>
+              <a href="https://g.co/kgs/YguJ2QL" target="_blank" rel="noopener noreferrer" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", textDecoration: "none" }}>G</a>
             </div>
           </div>
 
@@ -45,15 +43,15 @@ export default function Footer() {
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "15px" }}>
               <li style={{ display: "flex", gap: "10px", color: "#aaa", fontSize: "0.95rem" }}>
                 <span>📍</span>
-                <span>Sector 25, Khandeshwar, Navi Mumbai - 410206</span>
+                <span>Shop No. 47, Geometric Silver Crest, Sector 25, Kamothe, Navi Mumbai – 410 209</span>
               </li>
               <li style={{ display: "flex", gap: "10px", color: "#aaa", fontSize: "0.95rem" }}>
                 <span>📞</span>
-                <span>+91 00000 00000</span>
+                <span>+91 90965 42910<br />+91 85910 99263</span>
               </li>
               <li style={{ display: "flex", gap: "10px", color: "#aaa", fontSize: "0.95rem" }}>
-                <span>📧</span>
-                <span>info@shreedentalcare.com (TBD)</span>
+                <span>🕒</span>
+                <span>Mon–Sat, 10:30 AM–2:00 PM & 5:30 PM–9:30 PM<br />(Sunday by appointment)</span>
               </li>
             </ul>
           </div>

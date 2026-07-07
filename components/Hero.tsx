@@ -78,20 +78,12 @@ export default function Hero({ onBookClick }: { onBookClick: () => void }) {
             Book Appointment
           </a>
           <button className="btn btn-secondary cta-explore" id="hero-explore-btn" onClick={() => {
-            document.querySelector('.services-ribbon')?.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
           }}>
             Explore Services
           </button>
         </div>
 
-        {/* Happy Patients Collage / Stats */}
-        <div className="hero-stats">
-          <img src="/assets/patients_avatars.png" alt="Happy patient profiles" className="patients-collage" height="45" />
-          <div className="patients-info">
-            <div className="patients-count">4.9★</div>
-            <div className="patients-label">90+ Google Reviews</div>
-          </div>
-        </div>
       </div>
     </section>
   );

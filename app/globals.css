@@ -4,10 +4,10 @@
   /* Fonts are injected via Next.js next/font/google in layout.tsx using these variable names */
   
   /* Color Tokens */
-  --color-primary: #2DD4BF;       /* Main teal/mint color */
-  --color-primary-dark: #14B8A6;
-  --color-secondary: #0D9488;     /* Darker accent teal */
-  --color-light-bg: #E0F7F6;      /* Light teal background */
+  --color-primary: #0EA5E9;       /* Main blue color */
+  --color-primary-dark: #0284C7;
+  --color-secondary: #0369A1;     /* Darker accent blue */
+  --color-light-bg: #F0F9FF;      /* Light blue background */
   --color-white: #ffffff;
   --color-black: #111827;
   --color-text-muted: #4B5563;
