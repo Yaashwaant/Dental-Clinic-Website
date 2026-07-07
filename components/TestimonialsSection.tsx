@@ -75,8 +75,7 @@ export default function TestimonialsSection() {
           display: "grid", 
           gridTemplateColumns: "1fr", 
           gap: "60px",
-          alignItems: "center",
-          '@media (min-width: 992px)': { gridTemplateColumns: "1fr 1.2fr" }
+          alignItems: "center"
         }} className="testimonial-grid">
           
           {/* Left Column: Image & Floating Card */}
