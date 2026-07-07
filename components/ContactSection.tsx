@@ -64,8 +64,7 @@ export default function ContactSection() {
         <div style={{ 
           display: "grid", 
           gridTemplateColumns: "1fr", 
-          gap: "40px",
-          '@media (min-width: 992px)': { gridTemplateColumns: "1fr 1fr" }
+          gap: "40px"
         }} className="contact-grid">
           
           {/* Map Column */}
