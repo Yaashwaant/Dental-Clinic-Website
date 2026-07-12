@@ -81,9 +81,9 @@ body {
 }
 
 .logo-img {
-  width: 60px;
+  width: auto;
   height: 60px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .logo-text {
