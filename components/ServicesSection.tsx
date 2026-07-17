@@ -77,12 +77,12 @@ export default function ServicesSection() {
           {servicesData.map((service, index) => (
             <motion.div 
               key={index} 
+              className="service-card"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: (index % 6) * 0.1 }}
               style={{ 
-                background: "var(--color-white)", 
                 borderRadius: "16px", 
                 padding: "20px 16px", 
                 display: "flex", 
@@ -99,7 +99,6 @@ export default function ServicesSection() {
               
               <h3 style={{ 
                 fontSize: "1rem", 
-                color: "var(--color-secondary)", 
                 fontWeight: "700",
                 marginBottom: "8px",
                 lineHeight: "1.3"
@@ -109,7 +108,6 @@ export default function ServicesSection() {
               
               <p style={{ 
                 fontSize: "0.85rem", 
-                color: "var(--color-text-muted)", 
                 lineHeight: "1.5", 
                 fontWeight: "400",
                 marginBottom: "20px",
@@ -119,8 +117,7 @@ export default function ServicesSection() {
               </p>
               
               <div style={{ display: "flex", gap: "8px", marginTop: "auto", flexWrap: "wrap", justifyContent: "flex-end" }}>
-                <div style={{ 
-                  background: "var(--color-primary-light, #e6f4f1)", 
+                <div className="service-icon-wrapper" style={{ 
                   padding: "8px", 
                   borderRadius: "50%", 
                   display: "flex", 

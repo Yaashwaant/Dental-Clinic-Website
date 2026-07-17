@@ -942,3 +942,37 @@ body {
     display: none;
   }
 }
+
+/* Service Card Hover Effect */
+.service-card {
+  background-color: var(--color-white) !important;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.service-card h3 {
+  color: var(--color-secondary);
+  transition: color 0.3s ease;
+}
+
+.service-card p {
+  color: var(--color-text-muted);
+  transition: color 0.3s ease;
+}
+
+.service-icon-wrapper {
+  background-color: var(--color-primary-light, #e6f4f1);
+  transition: background-color 0.3s ease;
+}
+
+.service-card:hover {
+  background-color: var(--color-primary-dark) !important;
+}
+
+.service-card:hover h3, 
+.service-card:hover p {
+  color: var(--color-white) !important;
+}
+
+.service-card:hover .service-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
