@@ -3,25 +3,27 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 const servicesData = [
-  { title: "Teeth Whitening", desc: "Brighten stained teeth with our gentle whitening care." },
-  { title: "Crowns & Bridges", desc: "Restore strength and shape to damaged or missing teeth." },
-  { title: "Dental Implants", desc: "Permanent and natural-looking replacement for missing teeth." },
-  { title: "Smile Design", desc: "Enhance your smile with our expert cosmetic treatments." },
-  { title: "Veneers", desc: "Improve tooth color and shape for a perfect smile." },
-  { title: "Orthodontics", desc: "Straighten teeth discreetly with invisible clear braces." },
-  { title: "Root Canal", desc: "Save infected teeth with comfortable root treatment." },
-  { title: "Restorative Dentistry", desc: "Repair damaged teeth for healthy everyday function." },
-  { title: "Dentures", desc: "Regain chewing comfort with natural-looking dentures." },
-  { title: "Gum Treatment", desc: "Effective care to restore your gum health and stop bleeding." },
-  { title: "Dental Extractions", desc: "Safe and painless removal of problematic wisdom teeth." },
-  { title: "Pediatric Dentistry", desc: "Gentle and fun dental care specially tailored for kids." },
-  { title: "Digital X-ray", desc: "Advanced imaging for precise and accurate diagnosis." },
-  { title: "Flap Surgery", desc: "Advanced surgical treatment for severe gum disease." },
-  { title: "Scaling & Polishing", desc: "Professional deep cleaning to remove plaque and tartar." },
-  { title: "Fillings & Sealants", desc: "Protect teeth from decay and restore cavities." },
-  { title: "Mouth Guards", desc: "Custom-fitted protection for teeth during sports or sleep." },
-  { title: "Full Mouth Rehab", desc: "Comprehensive care to restore full dental function." }
+  { title: "Teeth Whitening", desc: "Brighten stained teeth with our gentle whitening care.", icon: "/assets/images/icon_teeth_whitening.png" },
+  { title: "Crowns & Bridges", desc: "Restore strength and shape to damaged or missing teeth.", icon: "/assets/images/icon_crowns_bridges.png" },
+  { title: "Dental Implants", desc: "Permanent and natural-looking replacement for missing teeth.", icon: "/assets/images/icon_dental_implants.png" },
+  { title: "Smile Design", desc: "Enhance your smile with our expert cosmetic treatments.", icon: "/assets/images/icon_smile_design.png" },
+  { title: "Veneers", desc: "Improve tooth color and shape for a perfect smile.", icon: "/assets/images/icon_veneers.png" },
+  { title: "Orthodontics", desc: "Straighten teeth discreetly with invisible clear braces.", icon: "/assets/images/icon_orthodontics.png" },
+  { title: "Root Canal", desc: "Save infected teeth with comfortable root treatment.", icon: "/assets/images/icon_root_canal.png" },
+  { title: "Restorative Dentistry", desc: "Repair damaged teeth for healthy everyday function.", icon: "/assets/images/icon_restorative_dentistry.png" },
+  { title: "Dentures", desc: "Regain chewing comfort with natural-looking dentures.", icon: "/assets/images/icon_dentures.png" },
+  { title: "Gum Treatment", desc: "Effective care to restore your gum health and stop bleeding.", icon: "/assets/images/icon_gum_treatment.png" },
+  { title: "Dental Extractions", desc: "Safe and painless removal of problematic wisdom teeth.", icon: "/assets/images/icon_dental_extractions.png" },
+  { title: "Pediatric Dentistry", desc: "Gentle and fun dental care specially tailored for kids.", icon: "/assets/images/icon_pediatric_dentistry.png" },
+  { title: "Digital X-ray", desc: "Advanced imaging for precise and accurate diagnosis.", icon: "/assets/images/icon_digital_xray.png" },
+  { title: "Flap Surgery", desc: "Advanced surgical treatment for severe gum disease.", icon: "/assets/images/icon_flap_surgery.png" },
+  { title: "Scaling & Polishing", desc: "Professional deep cleaning to remove plaque and tartar.", icon: "/assets/images/icon_scaling_polishing.png" },
+  { title: "Fillings & Sealants", desc: "Protect teeth from decay and restore cavities.", icon: "/assets/images/icon_fillings_sealants.png" },
+  { title: "Mouth Guards", desc: "Custom-fitted protection for teeth during sports or sleep.", icon: "/assets/images/icon_mouth_guards.png" },
+  { title: "Full Mouth Rehab", desc: "Comprehensive care to restore full dental function.", icon: "/assets/images/icon_full_mouth_rehab.png" }
 ];
 
 export default function ServicesSection() {
@@ -116,27 +118,18 @@ export default function ServicesSection() {
                 {service.desc}
               </p>
               
-              <div style={{ display: "flex", gap: "8px", marginTop: "auto", flexWrap: "wrap" }}>
-                <span style={{ 
-                  fontSize: "0.75rem", 
-                  fontWeight: "600", 
-                  color: "var(--color-black)", 
-                  padding: "4px 12px", 
-                  border: "1px solid #e5e7eb", 
-                  borderRadius: "50px" 
+              <div style={{ display: "flex", gap: "8px", marginTop: "auto", flexWrap: "wrap", justifyContent: "flex-end" }}>
+                <div style={{ 
+                  background: "var(--color-primary-light, #e6f4f1)", 
+                  padding: "8px", 
+                  borderRadius: "50%", 
+                  display: "flex", 
+                  alignItems: "center", 
+                  justifyContent: "center",
+                  color: "var(--color-primary, #0f766e)"
                 }}>
-                  Kamothe
-                </span>
-                <span style={{ 
-                  fontSize: "0.75rem", 
-                  fontWeight: "600", 
-                  color: "var(--color-black)", 
-                  padding: "4px 12px", 
-                  border: "1px solid #e5e7eb", 
-                  borderRadius: "50px" 
-                }}>
-                  Navi Mumbai
-                </span>
+                  {service.icon && <Image src={service.icon} alt={`${service.title} Icon`} width={32} height={32} style={{ objectFit: "contain" }} />}
+                </div>
               </div>
             </motion.div>
           ))}
