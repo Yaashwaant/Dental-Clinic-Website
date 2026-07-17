@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const doctorsData = [
   {
@@ -61,7 +62,7 @@ export default function DoctorsSection() {
             <div key={index} className="doctor-card" style={{ background: "var(--color-white)", borderRadius: "16px", padding: "30px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", textAlign: "center", transition: "transform 0.3s ease" }}>
               <div style={{ width: "120px", height: "120px", borderRadius: "50%", background: "var(--color-light-bg)", margin: "0 auto 20px", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
                 {doctor.image ? (
-                  <img src={doctor.image} alt={doctor.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                  <Image src={doctor.image} alt={`${doctor.name} - Kamothe Dentist at Shree Dental Care`} width={120} height={120} style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 ) : (
                   <span style={{ fontSize: "40px", color: "var(--color-primary)" }}>👩‍⚕️</span>
                 )}

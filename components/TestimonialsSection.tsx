@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -28,6 +29,13 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    }, 8000);
+    return () => clearInterval(interval);
+  }, []);
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -91,9 +99,11 @@ export default function TestimonialsSection() {
               aspectRatio: "4/5",
               position: "relative"
             }}>
-              <img 
+              <Image 
                 src="/Childern_treament_img.jpeg" 
-                alt="Dental Patient Care" 
+                alt="Happy Dental Patient Care at Shree Dental Care Kamothe" 
+                width={500}
+                height={625}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Hero({ onBookClick }: { onBookClick: () => void }) {
   return (
@@ -18,7 +19,7 @@ export default function Hero({ onBookClick }: { onBookClick: () => void }) {
 
         {/* Central 3D Tooth Image */}
         <div className="hero-tooth-container">
-          <img src="/assets/hero_tooth.png" alt="Dental Republic Tooth Mascot" className="hero-tooth" />
+          <Image src="/assets/hero_tooth.png" alt="Shree Dental Care Tooth Mascot - Top Dentist in Kamothe" width={400} height={400} className="hero-tooth" />
 
           {/* Overlapping Card: Advanced Care */}
           <div className="info-card card-advanced-care" id="card-advanced">
@@ -64,7 +65,7 @@ export default function Hero({ onBookClick }: { onBookClick: () => void }) {
         {/* Main Typography Heading */}
         <h1 className="hero-heading" style={{ fontSize: "3.5rem", lineHeight: "1.1" }}>
           Caring, Painless<br />
-          Dental Care for Your <span className="highlight-text" style={{ display: "inline-block", marginTop: "10px" }}>Whole Family</span>
+          Dental Care in Kamothe for Your <span className="highlight-text" style={{ display: "inline-block", marginTop: "10px" }}>Whole Family</span>
         </h1>
 
         {/* Body Copy */}

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const galleryItems = [
   { title: "Teeth Straightening – Invisible Aligner", image: "/assets/aligner.jpg" },
@@ -8,12 +9,12 @@ const galleryItems = [
 
 export default function GallerySection() {
   return (
-    <section id="gallery" style={{ padding: "80px 20px", backgroundColor: "var(--color-light-bg)" }}>
+    <section id="gallery" className="section-padding" style={{ padding: "80px 20px", backgroundColor: "var(--color-light-bg)" }}>
       <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: "50px" }}>
-          <h2 style={{ fontSize: "2.5rem", color: "var(--color-black)", marginBottom: "15px" }}>Treatment Gallery</h2>
+          <h2 style={{ fontSize: "2.5rem", color: "var(--color-black)", marginBottom: "15px" }}>Our Clinic</h2>
           <p style={{ color: "var(--color-text-muted)", maxWidth: "600px", margin: "0 auto", fontSize: "1.1rem" }}>
-            See the results of our advanced dental treatments.
+            Take a look at our state-of-the-art facilities designed for your comfort.
           </p>
         </div>
 
@@ -27,7 +28,7 @@ export default function GallerySection() {
               transition: "transform 0.3s ease"
             }} className="gallery-card">
               <div style={{ width: "100%", height: "250px", background: "#eaeaea" }}>
-                <img src={item.image} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.innerHTML = `<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">Photo: ${item.title}</div>`; }} />
+                <Image src={item.image} alt={`${item.title} - Shree Dental Care Kamothe`} width={400} height={250} style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.innerHTML = `<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">Photo: ${item.title}</div>`; }} />
               </div>
               <div style={{ padding: "20px", textAlign: "center" }}>
                 <h3 style={{ fontSize: "1.1rem", color: "var(--color-black)", fontWeight: "600" }}>{item.title}</h3>

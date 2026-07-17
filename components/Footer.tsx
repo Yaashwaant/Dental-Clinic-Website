@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           {/* Brand Col */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "20px" }}>
-              <img src="/logo.png" alt="Shree Dental Care Logo" style={{ width: "auto", height: "40px", objectFit: "contain", background: "white", padding: "2px" }} />
+              <Image src="/logo.png" alt="Shree Dental Care Logo - Kamothe Dentist" width={160} height={40} style={{ width: "auto", height: "40px", objectFit: "contain", background: "white", padding: "2px" }} />
               <div>
                 <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--color-primary)", lineHeight: "1.1" }}>Shree Dental Care</h3>
                 <span style={{ fontSize: "0.7rem", color: "#ccc" }}>& Multispeciality Clinic</span>

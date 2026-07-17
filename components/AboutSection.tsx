@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -38,20 +39,26 @@ export default function AboutSection() {
           }}></div>
           
           <div style={{ position: "relative", zIndex: 1, width: "100%", maxWidth: "400px" }}>
-            <motion.img 
+            <motion.div 
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.4 }}
-              src="/Main_slider_image.jpeg" 
-              alt="Shree Dental Care Clinic" 
               style={{ 
                 width: "100%", 
                 borderRadius: "24px", 
                 boxShadow: "0 20px 40px rgba(0,0,0,0.1)", 
-                objectFit: "cover",
+                overflow: "hidden",
                 border: "8px solid white",
                 aspectRatio: "3/4"
               }} 
-            />
+            >
+              <Image 
+                src="/Main_slider_image.jpeg" 
+                alt="Shree Dental Care Clinic - Best Dental Specialists in Kamothe Navi Mumbai" 
+                width={600} 
+                height={800} 
+                style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+              />
+            </motion.div>
           </div>
         </motion.div>
 
