@@ -5,20 +5,24 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const testimonials = [
   {
-    name: "Ms. Jamuna Kumari",
-    text: "Shree Dental Care provided excellent services and a perfect treatment plan. Since I was travelling from abroad, the doctors made sure that my dental implants and crowns were done within three days. Thank You.",
+    name: "Shilpa Khatu",
+    text: "I'm a regular at the clinic for my 5-year-old, and the experience has always been smooth and positive. Dr. Shital & Dr. Nupur are excellent with children — they create a calm, painless, and friendly environment that really puts kids at ease. Highly recommended if you're looking for someone skilled, genuine, and dependable in Navi Mumbai.",
   },
   {
-    name: "Rahul",
-    text: "My molar extraction was done so carefully with minimal discomfort. The post-procedure follow-up was also excellent. Highly recommend!",
+    name: "Kishor Kharul",
+    text: "From last 3-4 years I am taking dental treatment at Shree Dental Care. I received excellent treatment from Dr Sheetal Jagtap Bhise & Dr Anju Sharma. Both are not only very good doctors but also good human beings. I am very much satisfied with the treatment and will strongly recommend all for any types of dental treatment.",
   },
   {
-    name: "Amit",
-    text: "As a parent, I was worried about my child's visit, but the clinic creates such a calm, painless environment that puts kids completely at ease.",
+    name: "Happy Patient",
+    text: "Five stars isn't enough, best dentist experience ever! Dr. Sheetal is so professional, courteous, caring and made me feel at ease. She listened to my concerns, provided personalized treatment and personally followed up regarding my pain after root canal treatment. Thank you for giving me a painless treatment!",
   },
   {
-    name: "Sneha",
-    text: "I have had a childhood dental phobia for years. The doctors here handled my anxiety with so much care and gentleness. I finally feel comfortable going to the dentist.",
+    name: "Debarshi Das",
+    text: "Very good experience at Shree Dental Clinic. Underwent a molar tooth extraction. Dr. Sheetal and her team is extremely caring and supportive. Post procedure assistance is amazing. Extraction process was carefully done with minimum pain.",
+  },
+  {
+    name: "Satisfied Patient",
+    text: "I have been consulting Dr. Sheetal for the past three years, and my recent treatment experience was truly excellent. Even though the procedure was complicated, she and her team were extremely reassuring, patient, and caring throughout the process. I felt well supported at every step. Highly recommend!",
   }
 ];
 

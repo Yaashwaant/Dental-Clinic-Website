@@ -10,38 +10,38 @@ const doctorsData = [
   },
   {
     name: "Dr. Nupur Agarwal",
-    title: "Dentist",
+    title: "MDS, Pediatric and Preventive Dentistry",
     regNo: "",
-    desc: "Noted by patients for her exceptional ability to work well with children, making pediatric visits fun and stress-free.",
+    desc: "Consultant pediatric dentist bringing a compassionate, airway-focused approach to children's oral health care. Her passion has driven notable achievements in research and clinical publications.",
     image: "/Dr.%20Nupur%20Agarwal%20.JPG"
   },
   {
     name: "Dr. Rupali Bhorade Jagdale",
-    title: "Dentist",
+    title: "MS in Dental Sciences (National Taiwan University)",
     regNo: "",
-    desc: "Experienced dental professional committed to providing comprehensive and comfortable dental care for all patients.",
+    desc: "Regenerative endodontist and root canal specialist with a conservative approach to saving natural teeth. Expert in treating every case with clinical precision.",
     image: "/Dr.%20Rupali%20Bhorade%20Jagdale%20.jpeg"
   },
   {
     name: "Dr. Sachin Hotkar",
-    title: "Dentist",
+    title: "MDS, Oral & Maxillofacial Surgeon",
     regNo: "",
-    desc: "Dedicated to providing high-quality dental care with a focus on patient comfort and well-being.",
+    desc: "Renowned surgeon specializing in painless wisdom tooth extractions, advanced dental implant placements, and complex maxillofacial corrective surgeries.",
     image: "/Dr.%20Sachin%20Hotkar.jpeg"
   },
   {
     name: "Dr. Vishwas Damale",
-    title: "Dentist",
+    title: "Prosthodontist",
     regNo: "",
-    desc: "Expert in restorative and cosmetic dentistry, ensuring every patient leaves with a confident smile.",
+    desc: "Highly skilled prosthodontist specializing in the precise restoration and replacement of missing teeth using advanced denture therapies. Expert in functional rehabilitation and smile design.",
     image: "/Dr.%20Vishwas%20Damale.jpeg"
   },
   {
-    name: "Dr. Anju Sharma",
-    title: "Dentist",
+    name: "Dr. Madhuri Jogdand",
+    title: "MDS (Oral Medicine & Radiology)",
     regNo: "",
-    desc: "Experienced dental professional committed to providing comprehensive and comfortable dental care for all patients.",
-    image: null
+    desc: "Specialist in the non-surgical management of oral diseases, chronic jaw pain (TMJ), precancerous lesions, and oral cancer. Expert in advanced maxillofacial radiological interpretation.",
+    image: "/madhuri_jogdand.jpeg"
   }
 ];
 

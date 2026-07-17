@@ -7,10 +7,8 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import VideoSection from "@/components/VideoSection";
-import PatientEducationSection from "@/components/PatientEducationSection";
 import DoctorsSection from "@/components/DoctorsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import AftercareSection from "@/components/AftercareSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -37,10 +35,8 @@ export default function Home() {
         <ServicesSection />
         <WhyChooseUsSection />
         <VideoSection />
-        <PatientEducationSection />
         <DoctorsSection />
         <TestimonialsSection />
-        <AftercareSection />
         <ContactSection />
       </main>
       <Footer />
