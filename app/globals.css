@@ -778,6 +778,21 @@ body {
 }
 
 @media (max-width: 768px) {
+  .logo-text-wrapper {
+    display: flex !important;
+  }
+  .logo-text {
+    font-size: 16px !important;
+    white-space: nowrap;
+  }
+  .logo-text-wrapper span:last-child {
+    font-size: 0.6em !important;
+    white-space: nowrap;
+  }
+  .logo-img {
+    height: 45px !important;
+    width: auto;
+  }
   .hero-section {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -785,19 +800,25 @@ body {
     min-height: auto;
   }
   
-  .hero-image-column {
+  .hero-content-column {
     order: 1;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image-column {
+    order: 2;
     margin-bottom: 3rem;
   }
   
   .hero-tooth-container {
     width: 100%;
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin: 0 auto;
-    height: auto;
+    margin: 0 auto 3rem auto;
+    min-height: 320px;
   }
 
   .hero-tooth {
@@ -806,23 +827,19 @@ body {
   }
 
   .info-card {
-    position: relative;
-    left: auto;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    padding: 0.8rem 1rem;
-    width: 90%;
-    max-width: 320px;
-    transform: none;
+    position: absolute;
+    padding: 0.6rem 0.8rem;
+    width: auto;
+    max-width: 200px;
+    transform: scale(0.9);
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     text-align: left;
   }
   
   .info-card:hover {
-    transform: translateY(-4px);
+    transform: scale(0.9) translateY(-4px);
   }
 
   .card-text {
@@ -830,9 +847,14 @@ body {
     text-align: left;
   }
 
-  .card-advanced-care, .card-expert-doctors {
-    /* override previous absolute positions */
-    left: auto; right: auto; top: auto; bottom: auto;
+  .card-advanced-care {
+    left: 0;
+    top: 5%;
+  }
+
+  .card-expert-doctors {
+    right: 0;
+    bottom: 5%;
   }
 
   .circle-outer { width: 400px; height: 400px; }
